@@ -1,34 +1,145 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <script src="https://kit.fontawesome.com/115e21adad.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <title>Galleli - Home</title> 
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allan&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>Galleli - Home</title>
+  </head>
+  <body>
     <header class="galleli-header">
-        <div class="galleli-header">
-           <p class="galleli-header">Home</p>
-           <p class="galleli-header">Online Interior Design</p>
-        </div>
-        <div class="logo-container">
-            <img src="/assets/images/GalleiSmall.png" alt="logo" />
-        </div>
-        <div class="galleli-header">
-            <p class="galleli-header">Our Design </p>
-            <p class="galleli-header">Brand Story</p>
-        </div>
+      <div class="galleli-header">
+        <p class="galleli-header">Home</p>
+        <p class="galleli-header">Online Interior Design</p>
+      </div>
+      <div class="logo-container">
+        <img src="/assets/images/GalleiSmall.png" alt="logo" />
+      </div>
+      <div class="galleli-header">
+        <p class="galleli-header">Our Design</p>
+        <p class="galleli-header">Brand Story</p>
+      </div>
     </header>
 
-    <main class="home-content">
-        <img src="/assets/images/second.jpg" alt="living space" />
+    <main>
+      <section class="home-content">
+        <div>
+          <img src="/assets/images/second.jpg" alt="living space" />
+          <div class="home-message">
+            <p class="home-midpoint">
+              Hello you. Want to unravel the energies of our study room design?
+            </p>
+          </div>
+          <section class="container-home">
+            <div class="row-galleli">
+              <p class="home-create">
+                Create your own Fluid Study Room space <br />
+                effortlessly with our Design Template
+              </p>
+
+              <p>
+                With the testing times that we are living in -- our energy is<br />especially
+                precious. It is now even more important to be<br />aware and
+                identify where we thrive, where we are at our<br />
+                best!
+              </p>
+
+              <p>
+                Check out our design templates to create a fluid study <br />
+                room space and how to balance the aura of our everyday rooms
+                into a flowing abyss of relaxation zontes that stimulate our
+                creativity, clarity and sensory receptors
+              </p>
+
+              <form>
+                <div class="form-group">
+                  <div class="form-group">
+                    <label for="name">Your Name Here...</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >Your Email Address Here...</small
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Yes, Enlighten Me!
+                </button>
+                <p>
+                  *Your privacy and sensitive information will be honoured and
+                  <br />
+                  protected. You have our word! (I haven’t counted the small
+                  print as <br />
+                  wordcount)
+                </p>
+              </form>
+            </div>
+
+            <div class="row-with-image">
+              <div>
+                <img
+                  src="/assets/images/mockstudyroom400.jpg"
+                  class="response"
+                  alt="study room"
+                />
+              </div>
+
+              <p>What's inside</p>
+              <span>
+                <i class="las la-check-circle"></i>
+                3 x Dynamic mood boards inclusive of<br />
+                material, texture, and colour schematics
+              </span>
+
+              <span>
+                <i class="las la-check-circle"></i>
+                1 x Illustrated final Design Board
+              </span>
+
+              <span>
+                <i class="las la-check-circle"></i>
+                4 x 3D visualisation renderings
+              </span>
+
+              <span>
+                <i class="las la-check-circle"></i>
+                1 x Shopping list
+              </span>
+            </div>
+          </section>
+        </div>
+      </section>
     </main>
-
-
-</body>
+  </body>
 </html>
