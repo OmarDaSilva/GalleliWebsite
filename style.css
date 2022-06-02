@@ -7,17 +7,51 @@ footer {
     background-color: #FFFAE8;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly; 
+    /* position: fixed; */
+    width: 100%;
+    padding: 32px 32px 32px 32px;
+}
+
+footer li {
+    padding: 10px;
+    color: black;
+}
+
+footer ul {
+    list-style: none;
+}
+
+li.footer {
+    list-style: none;
+    display: flex;
     justify-content: center;
+}
+
+footer a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 h1 {
     font-size: 3rem;
+    font-family: 'Athena';
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+h1.faq {
+    font-size: 3rem;
+    font-family: 'Athena';
+    font-style: italic;
+    color: white;
+    padding: 32px   ;
 }
 
 h4 {
     font-size: 1rem;
 }
-
 
 header.galleli-header {
     align-items: center;
@@ -40,6 +74,13 @@ div.galleli-header {
 div.logo-container {
     padding-bottom: 30px;
     padding: 0 20px 30px 20px;
+}
+
+div.right-text {
+    text-align: right;
+    max-width: 600px;
+    display: flex;
+    justify-content: right;
 }
 /* 
 div.home-content-bottom {
@@ -90,6 +131,8 @@ p.home-create {
     letter-spacing: 4px;
 }
 
+
+
 section.home-content {
     align-items: center;
     display: flex;
@@ -107,9 +150,40 @@ section.interior-design-secion {
     text-align: center;
 }
 
-div.flex {
+section.faq {
+    background-color: rgb(37, 36, 36);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 64px;
+}
+
+section.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 128px 128px 128px;
+    text-align: left;
+    background: linear-gradient(to top, #cdcacaca 63%, #cdcacaca 63%,#ffffff 37%,  #ffffff 37%)
+}
+
+section summary {
+    color: #E8E8E8;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: max-content;
+    max-width: max-content;
+    justify-content: center;
+}
+
+div.flex p {
+    margin: 32px;
+    width: 600px;
 }
 
 .row-galleli {
@@ -135,6 +209,14 @@ div.flex {
 
 .la-check-circle:before {
     color: white;
+    font-size: x-large;
+}
+
+.la-instagram:before {
+    font-size: x-large;
+}
+
+.la-pinterest:before {
     font-size: x-large;
 }
 
@@ -172,7 +254,14 @@ p.home-row {
 }
 
 .img-small {
-    width: 50%;
+    width: 15%;
+    /* max-height: 170px; */
+    /* object-fit: cover; */
+}
+
+.img-cam9 {
+    width: 30%;
+    /* object-fit: fill; */
 }
 
 .img-large {
@@ -194,6 +283,23 @@ ul.checklist {
     list-style-image: url('/assets/images/check-circle.svg');
 }
 
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.nav {
+    float: left;
+}
+
+li.nav a {
+    display: block;
+    color: black;
+    text-align: center;
+}
+
 svg.w-6.h-6.tick {
     width: 32px;
     height: 32px;
@@ -203,3 +309,80 @@ svg.w-6.h-6.tick {
     text-align: left;
 }
 
+.maker-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 128px 20px 128px;
+}  
+
+.maker-section p {
+    color: black;
+    max-width: 400px;
+    font-family: 'Roboto', sans-serif;
+}  
+
+.div-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 16px;
+}
+
+.div-column div {
+    padding: 20px;
+}
+
+.right-style {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px 16px 150px;
+
+}
+
+.meet-title {
+    display: flex;
+    justify-content: center;
+    margin: 16px 350px 16px 0px;
+    font-family: 'Athena';
+    font-style: italic;
+}
+
+
+details {
+    user-select: none;
+    padding: 12px;
+    /* width: fit-content; */
+  }
+  
+  details>summary span.icon {
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s;
+    /* margin-left: 500px; */
+
+  }
+
+  div.faqs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  details[open] summary span.icon {
+    font-size: x-large;
+  }
+  
+  summary {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    /* width: max-content; */
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
