@@ -134,15 +134,15 @@ header.galleli-header {
   align-self: center;
 } */
 
-div.home-message {
+/* div.home-message {
   max-width: 700px;
   height: max-content;
   margin-top: 10px;
   background-color: #e8e8e8;
   display: block;
   flex-direction: column;
-  /* align-items: center; */
-}
+  align-items: center;
+} */
 
 p.home-midpoint {
   font-family: Athena;
@@ -155,7 +155,7 @@ p.home-midpoint {
   background-color: e8e8e8;
   margin-bottom: 30px;
   color: black;
-  width: max-content;
+  /* width: max-content; */
 }
 
 p.home-create {
@@ -167,8 +167,12 @@ p.home-create {
   letter-spacing: 4px;
 }
 
+.home-background {
+  background-color: #fffae8;
+}
 
-section.home-content {
+
+/* section.home-content {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -180,11 +184,28 @@ section.home-content {
     #fffae8 45%,
     #fffae8 45%
   );
+} */
+
+.home-content {
+  background-color: #fffae8;
+  padding: 32px 0px 64px 0px;
 }
 
+.home-content-bottom {
+  background-color: #9c938b;
+  padding: 64px 0px;
+}
+
+.custom-container {
+  max-width: 1300px;
+}
+/* 
 div.diffWidth {
   width: 80%;
-  align-self: center;
+} */
+
+.custom-col {
+  margin-right: 20px;
 }
 /* section all have in common
     display: flex;
@@ -353,7 +374,7 @@ p.home-row {
 
 .check p {
   padding-left: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .privacy {
@@ -371,7 +392,7 @@ p.home-row {
 
 .img-home {
     width: 100%;
-    max-height: 568px;
+    max-height: 650px;
     opacity: 0.8;
 }
 
@@ -676,6 +697,40 @@ div.para-image {
   margin: 30px 0px;
 }
 
-@media screen {
+@media only screen and (max-width: 1300px){
+  .custom-row {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+  }
   
+  .col-6 {
+    max-width: 70%;
+  }
+
+  .home-message {
+    display: flex;
+    justify-content: center;
+  }
+
+  .check-list {
+    align-items: start;
+    padding-bottom: 20px;
+  }
 }
+
+@media only screen and (max-width: 750px) {
+  .col-6 {
+    max-width: 100%;
+  }
+
+}
+
+.home-message {
+  display: flex;
+  /* justify-content: start; */
+  width: 100%;
+  margin-top: -85px;
+}
+
+
