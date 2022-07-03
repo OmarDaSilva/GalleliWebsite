@@ -20,33 +20,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="/assets/javascript/readmore.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Caveat:wght@500&family=Montserrat:wght@200;500&family=Roboto:wght@100;300&family=Yeseva+One&display=swap" rel="stylesheet">
-    <title>Galleli - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Caveat:wght@500&family=Montserrat:wght@200;300;500&family=Roboto:wght@100;300&family=Yeseva+One&display=swap" rel="stylesheet">    <title>Galleli - Home</title>
     
   </head>
   <body>
-
-    <div class="home-background">
-      <header class="galleli-header container custom-container">
-        <div class="header-border">
-          <ul class="nav">
-            <li class="nav"><a>Home</a></li>
-            <li class="nav"><a>Online interior design</a></li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light container custom-container">
+        <div class="collapse navbar-collapse left-nav-links text-center" id="navbarSupportedContent">
+          <div class="header-border">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a>Home</a></li>
+              <li class="nav-item"><a>Online interior design</a></li>
+            </ul>
+          </div>
         </div>
   
-        <img src="/assets/images/GalleiSmall.png" alt="logo" class="logo"/>
-  
-        <div class="header-border">
-          <ul class="nav">
-            <li class="nav"><a>Our Design Packages</a></li>
-            <li class="nav"><a>Brand Story</a></li>
-          </ul>
+        <a class="navbar-brand nav-logo" href="#">
+          <img src="/assets/images/GalleiSmall.png" alt="logo" class="img-fluid"/>
+        </a>
+        <button class="navbar-toggler nav-collap" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse right-nav-links text-center" id="navbarSupportedContent">
+          <div class="header-border">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a>Our Design Packages</a></li>
+                <li class="nav-item"><a>Brand Story</a></li>
+            </ul>
+          </div>
         </div>
-  
-        </div>
-      </header>
-    </div>
+      </nav>
+    </header>
 
     <main>
       <section class="home-content">
@@ -79,9 +86,6 @@
             
 
             <div class="col-6">
-              <!-- <p class="home-midpoint">
-                Hello you. Want to unravel the energies of our study room design?
-              </p> -->
               <div class="diffWidth">
   
                 <p class="home-create">
@@ -130,15 +134,19 @@
             </div>
 
             <div class="col-6">
+
               <img
               class="img-fluid"
                 src="/assets/images/mockroom.png"
                 alt="study room"
               />
+
               <div class="check-list">
+
                 <div class="title-check">
                   <p>What's Inside</p>
                 </div>
+
                 <div class="check">
                     <i class="las la-check-circle"></i>
                     <p>3 x Dynamic mood boards inclusive of
@@ -161,7 +169,7 @@
                       <i class="las la-check-circle"></i>
                       <p>1 x Shopping list</p>
                   </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -237,7 +245,7 @@
         <div class="container justify-content-center">
           
           <div class="row justify-content-center w-75 custom-spacing">
-            <h1>Our Design Packages</h1>
+            <h1 class="custom-margin-h1">Our Design Packages</h1>
             <p class="dark shift-text-right">Our offer stack is built on the Andinkra symbol system of West Africa - a spirtual myriad of iconic expressions that radiate meaningful
               messages. Commonly used in fabrics, pottery, wall interiors and architectural features.
             </p>
@@ -252,8 +260,10 @@
                 
                </div>
                <div class="col-sm-8">
-                <h4>THE ADWO PACKAGE</h4>
-                <h5>The symbol of peace</h5>
+                 <div class="package-borders">
+                   <h4>THE ADWO PACKAGE</h4>
+                   <h5>The symbol of peace</h5>
+                 </div>
   
                 <p class="dark">
                   This package is a concept creation and decoration service that represents
@@ -268,8 +278,57 @@
                   spiritual myriad of iconic expressions that radiate meaningful messages.
                   Commonly used in fabrics, pottery, wall interiors and architectural
                   features.
-  
-                  The elements of your design will include:
+                  <br>
+                  <p class="dark-bold">The elements of your design will include:</p>
+
+                  <p>
+                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="collapse-readmore">
+                      read more...
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="check-list">
+
+                      <!-- <div class="title-check">
+                        <p>The elements of your design will include:</p>
+                      </div> -->
+      
+                      <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>3 x Dynamic mood boards inclusive of
+                          material, texture, and colour schematics
+                          </p>
+                      </div>
+
+                      <div class="check">
+                        <i class="las la-check-circle"></i>
+                        <p>2x Technical Drawings in detail of the room measurement plan & furniture
+                          layouts</p>
+                    </div>
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>1 x Illustrated final Design Board</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>2x Styling boards</p>
+                      </div>
+                        
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>4 x 3D visualisation renderings</p>
+                        </div>
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>1x Customised shopping listThe final annotated plan</p>
+                        </div>
+      
+                    </div>
+                  </div>
                 </p>
                </div>
               </div>
@@ -280,9 +339,11 @@
                  
                 </div>
                 <div class="col-sm-8">
-                 <h4>THE SESA WO SUBAN PACKAGE</h4>
-                 <h5>The symbol of change &
-                  character transformation.</h5>
+                  <div class="package-borders">
+                    <h4>THE SESA WO SUBAN PACKAGE</h4>
+                    <h5>The symbol of change &
+                     character transformation.</h5>
+                  </div>
    
                  <p class="dark">
                    This package is a concept creation and decoration service that represents
@@ -297,11 +358,76 @@
                    spiritual myriad of iconic expressions that radiate meaningful messages.
                    Commonly used in fabrics, pottery, wall interiors and architectural
                    features.
+
+                   <br>
+                  <p class="dark-bold">The elements of your design will include:</p>
    
-                   The elements of your design will include:
+                   <p>
+                    <a data-toggle="collapse" href="#package2" role="button" aria-expanded="false" aria-controls="package2" class="collapse-readmore">
+                      read more...
+                    </a>
+                  </p>
+                  <div class="collapse" id="package2">
+                    <div class="check-list">
+
+                      <div class="title-check">
+                        <p>The elements of your design will include:</p>
+                      </div>
+      
+                      <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>1x Dynamic mood board inclusive of material, texture and colour
+                            schematics
+                          </p>
+                      </div>
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>2x Technical Drawings in detail of the room measurement plan, furniture
+                              layout, customised furniture to order, sweep of the walls & flooring
+                              scheme</p>
+                        </div>
+                        
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>1x Illustrated final design board</p>
+                        </div>
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>2x Styling boards</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>4x 3D visualisation renderings (4-8 images of each room)</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>1x Customised shopping list</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>The final annotated plan</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>3 month post-design support</p>
+                        </div>
+      
+                    </div>
+                  </div>
                  </p>
                 </div>
                </div>
+               </div>
+
+
+              </div>
               
                <div class="col-sm row design-package-background ">
                 <div class="col">
@@ -309,8 +435,10 @@
                  
                 </div>
                 <div class="col-sm-8">
-                 <h4>THE SUNSUM PACKAGE</h4>
-                 <h5>The symbol of the human soul</h5>
+                  <div class="package-borders">
+                    <h4>THE SUNSUM PACKAGE</h4>
+                    <h5>The symbol of the human soul</h5>
+                  </div>
    
                  <p class="dark">
                   Representing a bespoke home design that reflects the core of your
@@ -319,7 +447,69 @@
                   joinery.
                   It is a symbol and energy of everlasting purity that kindles a deep
                   connection between you and your home space.
-                   The elements of your design will include:
+
+                  <br>
+                  <p class="dark-bold">The elements of your design will include:</p>
+                  <p>
+                    <a data-toggle="collapse" href="#packag3" role="button" aria-expanded="false" aria-controls="packag3" class="collapse-readmore">
+                      read more...
+                    </a>
+                  </p>
+                  <div class="collapse" id="packag3">
+                    <div class="check-list">
+
+                    
+      
+                      <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>
+                            1x Dynamic mood board inclusive of material, texture and colour
+                            schematics
+                          </p>
+                      </div>
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>
+                              2x Technical Drawings in detail of the room measurement plan, furniture
+                              layout, customised furniture to order, sweep of the walls & flooring
+                              scheme
+                            </p>
+                        </div>
+                        
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>1x Illustrated final design board</p>
+                        </div>
+                        
+                        <div class="check">
+                            <i class="las la-check-circle"></i>
+                            <p>2x Styling boards</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>4x 3D visualisation renderings (4-8 images of each room)</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>1x Customised shopping list</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>The final annotated plan</p>
+                        </div>
+
+                        <div class="check">
+                          <i class="las la-check-circle"></i>
+                          <p>3 month post-design support</p>
+                        </div>
+      
+                    </div>
+                  </div>
                  </p>
                 </div>
                </div>
@@ -718,5 +908,8 @@
         </div>
       </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
